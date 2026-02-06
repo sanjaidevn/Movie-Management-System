@@ -1,20 +1,10 @@
-//region Env Loader (JSON from .env)
-const loadEnv = () => {
-    try {
-        // * Getting the ENV
-        const raw = import.meta?.env?.VITE_APP_ENV ?? '{}'
-        // * Parsing the ENV
-        const parsed = JSON?.parse?.(raw ?? '{}') ?? {}
-        // * returning ENV
-        return parsed;
-    } catch (error) {
-        console.error("Env Parsing Failed");
-        return {}
-    }
-}
+//region Env 
+const env = {
+    API_BASE_URL: import.meta.env?.VITE_API_BASE_URL ?? "http://localhost:5000",
+    NODE_ENV: import.meta.env?.VITE_NODE_ENV ?? 'development',
+};
 
-const env = loadEnv?.()
-//endregion Env Loader (JSON from .env)
+//endregion Env 
 
 // region Export ENV
 export { env }

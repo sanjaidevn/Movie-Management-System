@@ -9,12 +9,12 @@ import { env } from '../config/env/env.js'
 
 
 //region Base URL
-const API_BASE_URL = env?.API_BASE_URL ?? 'http://localhost:5000/api'
+const API_BASE_URL = env?.API_BASE_URL ?? 'http://localhost:5000'
 //endregion Base URL
 
 //region Axios Instance
 const apiClient = axios.create({
-    baseURL: API_BASE_URL,
+    baseURL: `${API_BASE_URL}/api`,
     withCredentials: true,
     timeout: 15000,
 })
