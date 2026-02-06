@@ -1,0 +1,76 @@
+/*region Global Styles */
+body {
+	background-color: #f8f9fa;
+}
+
+.card {
+	border-radius: 12px;
+}
+
+.table {
+	font-size: 14px;
+}
+
+.btn {
+	border-radius: 10px;
+}
+
+.react-select__control {
+	min-height: 38px;
+}
+.react-select__multi-value {
+	background-color: #e9ecef;
+}
+.react-select__multi-value__label {
+	color: #212529;
+}
+.react-select__multi-value__remove:hover {
+	background-color: #ced4da;
+}
+
+.sidebar-minimize {
+	top: 50%;
+	right: -12px;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	font-size: large;
+}
+
+.overlay-loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	min-height: 200px;
+}
+
+.main-area {
+	position: relative;
+	min-height: 300px;
+}
+
+aside {
+	top: 56px;
+	height: calc(100vh - 56px);
+	transition: width 0.3s ease;
+	z-index: 1030;
+}
+
+.main-admin-layout {
+	margin-top: 56px;
+	transition: margin-left 0.3s ease;
+	padding: 1rem;
+}
+
+.movie-card {
+	height: 180px;
+	background: linear-gradient(135deg, #1e1e2f 0%, #4e54c8 100%);
+	border-radius: 12px 12px 0 0;
+}
+
+/*endregion Global Styles */
